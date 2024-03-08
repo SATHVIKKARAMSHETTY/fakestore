@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap") * {
+  font-family: "Playfair Display", serif;
+}
+body {
+  margin: 0;
+  background-color: #b0c5a4;
+}
+
+.titleSearch > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleSearch > div > input {
+  height: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 70%;
+
+  font-size: 1rem;
+}
+.titleSearch > div > button {
+  height: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 1px solid #afe1e2;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.icon {
+  font-size: 1rem;
+}
+.titleSearch > div {
+  flex-grow: 4;
+  margin: 0 auto;
+}
+.titleSearch {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0d9276;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.header > div {
+  display: flex;
+}
+.header > div > h2 {
+  padding: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: black;
+}
+.productTile:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-color: rgba(94, 96, 97, 0.336);
+}
+.productTile {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  padding: 0.5rem;
+  margin: 1rem 0.5rem;
+  border: 2px solid #80a299df;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.productTileParent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem 2rem;
+  justify-content: center;
+}
+.productPage {
+  display: flex;
+  margin: 1rem 2rem;
+}
+.productPageImage {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: aliceblue;
+}
+.productPageImage > img {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.productTile > img {
+  aspect-ratio: 1/1;
+  width: 10rem;
+}
+.pageDesc {
+  padding-left: 5rem;
+}
+.link > p {
+  margin: 0.2rem;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .productTileParent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productTile {
+    width: 80%;
+  }
+  .productPage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .productPage > img {
+    aspect-ratio: 1/1;
+    width: 50%;
+  }
+  .pageDesc {
+    padding-left: 0;
+  }
+}
